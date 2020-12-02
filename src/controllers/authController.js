@@ -6,8 +6,6 @@ import PassportGoogle from "../config/passport-google.js";
 
 const createCookieFromToken = (userID, req, res) => {
   const { JWT_SECRET_KEY } = process.env;
-  console.log(userID);
-  console.log("sign coockie", JWT_SECRET_KEY);
 
   const options = { iss: "StudentPad", sub: userID };
   const token = jwt.sign(options, JWT_SECRET_KEY, {
