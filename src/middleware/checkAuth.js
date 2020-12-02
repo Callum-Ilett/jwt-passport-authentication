@@ -1,4 +1,4 @@
-import passportJWT from "../authentication/passport-jwt.js";
+import passportJWT from "../config/passport-jwt.js";
 
 export default {
   checkAuthenticated: (req, res, next) => {
